@@ -29,5 +29,11 @@ from tkinter.scrolledtext import ScrolledText
 output_text = ScrolledText(height=10, width=50)
 output_text.grid(row=3, column=1, padx=10, pady=10, sticky="w")
 
+button = tk.Button(
+    window,
+    text="Прочитать файл"
+)
+button.grid(row=4, column=1)
+
 # ---------- запуск ----------
 window.mainloop()
