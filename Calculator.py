@@ -22,5 +22,12 @@ label_20.grid(row=2, column=0, padx=10, pady=10, sticky="e")
 
 label_21 = tk.Label(text="")
 label_21.grid(row=2, column=1, sticky="w")
+
+
+from tkinter.scrolledtext import ScrolledText
+
+output_text = ScrolledText(height=10, width=50)
+output_text.grid(row=3, column=1, padx=10, pady=10, sticky="w")
+
 # ---------- запуск ----------
 window.mainloop()
