@@ -35,5 +35,8 @@ button = tk.Button(
 )
 button.grid(row=4, column=1)
 
+def process_button():
+    output_text.delete(1.0, tk.END) 
+
 # ---------- запуск ----------
 window.mainloop()
