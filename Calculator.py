@@ -37,6 +37,11 @@ button.grid(row=4, column=1)
 
 def process_button():
     output_text.delete(1.0, tk.END) 
+    
+    from tkinter import filedialog as fd
+
+def do_dialog():
+    return fd.askopenfilename()
 
 # ---------- запуск ----------
 window.mainloop()
