@@ -42,6 +42,13 @@ def process_button():
 
 def do_dialog():
     return fd.askopenfilename()
+    
+    import os
+
+def do_dialog():
+    my_dir = os.getcwd()
+    return fd.askopenfilename(initialdir=my_dir)
+    
 
 # ---------- запуск ----------
 window.mainloop()
