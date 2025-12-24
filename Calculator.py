@@ -49,6 +49,13 @@ def do_dialog():
     my_dir = os.getcwd()
     return fd.askopenfilename(initialdir=my_dir)
     
+    import pandas as pd
+
+def pandas_read_csv(file_name):
+    df = pd.read_csv(file_name, header=None)
+    label_11["text"] = df.shape[0]
+    label_21["text"] = df.shape[1]
+    return df
 
 # ---------- запуск ----------
 window.mainloop()
